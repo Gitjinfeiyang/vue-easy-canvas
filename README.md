@@ -1,5 +1,7 @@
 # vue-easy-canvas
-将 easy-canvas-layout 封装成vue组件进行使用
+将 easy-canvas 封装成vue组件进行使用
+
+- 相关库 [easy-canvas](https://github.com/Gitjinfeiyang/easy-canvas)
 
 ## Installation
 ``` bash
