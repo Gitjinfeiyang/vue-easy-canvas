@@ -1,7 +1,7 @@
 {
   "name": "vue-easy-canvas",
   "version": "0.1.0",
-  "private": true,
+  "main": "./src/index.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "easy-canvas-layout": "0.0.1",
     "vue": "^2.6.11"
   },
   "devDependencies": {
