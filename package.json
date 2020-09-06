@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "easy-canvas-layout": "0.0.1",
+    "easy-canvas-layout": "0.0.8",
     "vue": "^2.6.11"
   },
   "devDependencies": {

@@ -17,6 +17,10 @@ export default {
         height:{
             type:Number,
             default:300
+        },
+        debug:{
+            type:Boolean,
+            default:false
         }
     },
     data(){
@@ -61,7 +65,7 @@ export default {
             this.layer = easyCanvas.createLayer(this.ctx,{
                 dpr,
                 width:w,
-                height:h,
+                height:h
             })
         },
 
@@ -107,13 +111,13 @@ function generate(node,c){
         return c((h) => h(node.tag,{
             styles:node.styles,
             attrs:node.$attrs,
-            on:node.on
+            on:node.on || {}
         },node.$el.innerText))
     }else{
         return c((h) => h(node.tag,{
             styles:node.styles,
             attrs:node.$attrs,
-            on:node.on
+            on:node.on || {}
         },children))
     }
 }
