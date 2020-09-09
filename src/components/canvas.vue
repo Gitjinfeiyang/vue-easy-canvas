@@ -72,11 +72,14 @@ export default {
         dpr,
         width: w,
         height: h,
+        debug: this.debug,
       })
     },
 
     generateElement() {
+      const start = Date.now()
       this.node = generate(this, easyCanvas.createElement)
+      console.log(`转换节点耗时 ${Date.now() - start} ms`)
     },
 
     mountNode() {

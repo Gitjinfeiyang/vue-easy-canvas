@@ -1,5 +1,6 @@
 # vue-easy-canvas
 将 easy-canvas 封装成vue组件进行使用
+*注意：内部实现是将vue节点转换成目标节点，转换过程中会有性能损失，渲染与转换时间大概4:1*
 
 - 相关库 [easy-canvas](https://github.com/Gitjinfeiyang/easy-canvas)
 
@@ -25,8 +26,8 @@ Vue.use(easyCanvas)
         </ec-view>
     </ec-view>
 
-    <ec-view :styles="styles.itemWrapper" 
-        v-for="(item,index) in examples" 
+    <ec-view :styles="styles.itemWrapper"
+        v-for="(item,index) in examples"
         :key="index"
         :on="{
         click(e){
